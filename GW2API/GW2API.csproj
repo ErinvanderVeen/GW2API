@@ -37,6 +37,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Source\Core.cs" />
     <Compile Include="Source\Account\Account.cs" />
+    <Compile Include="Source\Account\Achievements.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
