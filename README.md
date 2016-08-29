@@ -32,7 +32,7 @@ namespace GW2Example
 | Endpoint                        | Implemented |
 |---------------------------------|-------------|
 | /v2/account                     | Yes         |
-| /v2/account/achievements        | No          |
+| /v2/account/achievements        | Yes         |
 | /v2/account/bank                | No          |
 | /v2/account/dyes                | No          |
 | /v2/account/finishers           | No          |
