@@ -33,4 +33,3 @@ namespace GW2API.Account.Achievements
 		public int? repeated { get; set; }
 	}
 }
-

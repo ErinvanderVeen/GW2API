@@ -5,21 +5,21 @@ using Newtonsoft.Json;
 
 namespace GW2API.Core
 {
-	public class GW2API<T>
+	internal class GW2API<T>
 	{
 		private string apiKey;
 		private string endpoint;
 		private const string baseURL = "https://api.guildwars2.com/v2/";
 		private T target;
 
-		public GW2API (T target, string endpoint, string apiKey = null)
+		internal GW2API (T target, string endpoint, string apiKey = null)
 		{
 			this.target = target;
 			this.endpoint = endpoint;
 			this.apiKey = apiKey;
 		}
 
-		public void Download (List<Tuple<string, string>> parameters = null)
+		internal void Download (List<Tuple<string, string>> parameters = null)
 		{
 			string url = CreateURL (target, parameters);
 			string json;
