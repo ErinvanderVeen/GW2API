@@ -35,7 +35,7 @@ namespace GW2Example
 | /v2/account/achievements        | Yes         |
 | /v2/account/bank                | Yes         |
 | /v2/account/dyes                | Yes         |
-| /v2/account/finishers           | No          |
+| /v2/account/finishers           | Yes         |
 | /v2/account/inventory           | No          |
 | /v2/account/materials           | No          |
 | /v2/account/minis               | No          |

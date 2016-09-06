@@ -41,6 +41,7 @@
     <Compile Include="Source\Core\Core.cs" />
     <Compile Include="Source\Core\Item.cs" />
     <Compile Include="Source\Account\Dyes.cs" />
+    <Compile Include="Source\Account\Finishers.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
