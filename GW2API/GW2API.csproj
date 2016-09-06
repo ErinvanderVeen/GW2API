@@ -40,6 +40,7 @@
     <Compile Include="Source\Account\Bank.cs" />
     <Compile Include="Source\Core\Core.cs" />
     <Compile Include="Source\Core\Item.cs" />
+    <Compile Include="Source\Account\Dyes.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
