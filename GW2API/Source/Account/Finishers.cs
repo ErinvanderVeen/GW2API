@@ -1,6 +1,5 @@
-﻿using System;
+﻿using GW2API.Core;
 using System.Collections.Generic;
-using GW2API.Core;
 
 namespace GW2API.Account.Finishers
 {

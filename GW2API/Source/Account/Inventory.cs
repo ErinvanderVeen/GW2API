@@ -1,6 +1,6 @@
-﻿using System;
+﻿using GW2API.Core;
+using GW2API.Core.ItemSlot;
 using System.Collections.Generic;
-using GW2API.Core;
 
 namespace GW2API.Account.Inventory
 {

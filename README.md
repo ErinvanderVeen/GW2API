@@ -34,11 +34,11 @@ namespace GW2Example
 | /v2/account/dyes                | Yes         |
 | /v2/account/finishers           | Yes         |
 | /v2/account/inventory           | Yes         |
-| /v2/account/materials           | No          |
-| /v2/account/minis               | No          |
-| /v2/account/skins               | No          |
-| /v2/account/titles              | No          |
-| /v2/account/wallet              | No          |
+| /v2/account/materials           | Yes         |
+| /v2/account/minis               | Yes         |
+| /v2/account/skins               | Yes         |
+| /v2/account/titles              | Yes         |
+| /v2/account/wallet              | Yes         |
 | /v2/achievements                | No          |
 | /v2/achievements/categories     | No          |
 | /v2/achievements/daily          | No          |

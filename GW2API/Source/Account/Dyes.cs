@@ -1,9 +1,9 @@
-﻿using System.Collections.Generic;
-using GW2API.Core;
+﻿using GW2API.Core;
+using System.Collections.Generic;
 
 namespace GW2API.Account.Dyes
 {
-	public class Dyes : Endpoint <List<int>>
+	public class Dyes : Endpoint<List<int>>
 	{
 		public List<int> data { get; }
 

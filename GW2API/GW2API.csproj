@@ -43,6 +43,15 @@
     <Compile Include="Source\Account\Finishers.cs" />
     <Compile Include="Source\Account\Inventory.cs" />
     <Compile Include="Source\Core\Endpoint.cs" />
+    <Compile Include="Source\Account\Masteries.cs" />
+    <Compile Include="Source\Account\Materials.cs" />
+    <Compile Include="Source\Core\CraftingMaterial.cs" />
+    <Compile Include="Source\Account\Minis.cs" />
+    <Compile Include="Source\Account\Outfits.cs" />
+    <Compile Include="Source\Account\Recipes.cs" />
+    <Compile Include="Source\Account\Skins.cs" />
+    <Compile Include="Source\Account\Titles.cs" />
+    <Compile Include="Source\Account\Wallet.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

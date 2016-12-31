@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace GW2API.Core
+﻿namespace GW2API.Core.ItemSlot
 {
 	public class ItemSlot
 	{
