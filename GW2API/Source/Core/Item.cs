@@ -2,9 +2,10 @@
 
 namespace GW2API.Core
 {
-	public class Item
+	public class ItemSlot
 	{
-		public int id { get; set; }
+		internal ItemSlot() {}
+		public int? id { get; set; }
 		public int count { get; set; }
 		public string binding { get; set; }
 		public string bound_to { get; set; }

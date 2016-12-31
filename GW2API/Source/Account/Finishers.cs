@@ -4,26 +4,20 @@ using GW2API.Core;
 
 namespace GW2API.Account.Finishers
 {
-	public class Finishers
+	public class Finishers : Endpoint<List<Finisher>>
 	{
-		private GW2API<List<Finisher>> gw2api;
+		public List<Finisher> data { get; }
 
-		public List<Finisher> finishers { get; set; }
-
-		public Finishers (string apiKey)
+		public Finishers(string apiKey)
 		{
-			this.finishers = new List<Finisher> ();
-			this.gw2api = new GW2API<List<Finisher>> (finishers, "account/finishers", apiKey);
-		}
-
-		public void Update ()
-		{
-			gw2api.Download ();
+			data = new List<Finisher>();
+			Init("account/finishers", data, apiKey);
 		}
 	}
 		
 	public class Finisher
 	{
+		internal Finisher() {}
 		public int id { get; set; }
 		public bool permanent { get; set; }
 		public int? quantity { get; set; }

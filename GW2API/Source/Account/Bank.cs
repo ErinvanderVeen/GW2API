@@ -1,24 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using GW2API.Core;
 
 namespace GW2API.Account.Bank
 {
-	public class Bank
+	public class Bank : Endpoint<List<ItemSlot>>
 	{
-		private GW2API<List<Item>> gw2api;
+		public List<ItemSlot> data { get; }
 
-		public List<Item> items { get; set; }
-
-		public Bank (string apiKey)
+		public Bank(string apiKey) : base()
 		{
-			this.items = new List<Item> ();
-			this.gw2api = new GW2API<List<Item>> (items, "account/bank", apiKey);
-		}
-
-		public void Update ()
-		{
-			gw2api.Download ();
+			data = new List<ItemSlot>();
+			Init("account/bank", data, apiKey);
 		}
 	}
 }

@@ -1,29 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using GW2API.Core;
 
 namespace GW2API.Account.Achievements
 {
-	public class Achievements
+	public class Achievements : Endpoint<List<Achievement>>
 	{
-		private GW2API<List<Achievement>> gw2api;
+		public List<Achievement> data { get; }
 
-		public List<Achievement> achievements { get; set; }
-
-		public Achievements (string apiKey)
+		public Achievements(string apiKey) : base()
 		{
-			this.achievements = new List<Achievement> ();
-			this.gw2api = new GW2API<List<Achievement>> (achievements, "account/achievements", apiKey);
-		}
-
-		public void Update ()
-		{
-			gw2api.Download ();
+			data = new List<Achievement>();
+			Init("account/achievements", data, apiKey);
 		}
 	}
 
 	public class Achievement
 	{
+		internal Achievement() {}
 		public int id { get; set; }
 		public int current { get; set; }
 		public int max { get; set; }

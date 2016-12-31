@@ -1,13 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using GW2API.Core;
 
 namespace GW2API.Account
 {
-	public class Account
+	public class Account : Endpoint<Data>
 	{
-		private GW2API<Account> gw2api;
+		public Data data { get; }
+		public Account(string apiKey) : base()
+		{
+			data = new Data();
+			Init("account", data, apiKey);
+		}
+	}
 
+	public class Data {
+		internal Data() {}
 		public string id { get; set; }
 		public string name { get; set; }
 		public int world { get; set; }
@@ -19,15 +26,5 @@ namespace GW2API.Account
 		public int daily_ap { get; set; }
 		public int monthly_ap { get; set; }
 		public int wvw_rank { get; set; }
-
-		public Account (string apiKey)
-		{
-			this.gw2api = new GW2API<Account> (this, "account", apiKey);
-		}
-
-		public void Update ()
-		{
-			gw2api.Download ();
-		}
 	}
 }
