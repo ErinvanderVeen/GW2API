@@ -11,19 +11,16 @@ namespace GW2Example
 {
     class ExampleClass
     {
-        public static void Main (string[] args)
+        public static void Main(string[] args)
         {
             // Setup the connection to the GW2
-            Account account = new Account ("API_KEY_HERE");
+            Account account = new Account("API_KEY_HERE");
 
-            // Get the data from the API
-            account.Update ();
-
-            // Access the date
-            Console.WriteLine ("Username:" + account.name);
-            Console.WriteLine ("Created:" + account.created);
-            Console.WriteLine ("World:" + account.world);
-            Console.WriteLine ("Commander:" + account.commander);
+            // Access the data
+            Console.WriteLine ("Username:" + account.data.name);
+            Console.WriteLine ("Created:" + account.data.created);
+            Console.WriteLine ("World:" + account.data.world);
+            Console.WriteLine ("Commander:" + account.data.commander);
         }
     }
 }
