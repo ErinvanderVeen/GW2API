@@ -11,6 +11,7 @@ namespace GW2API.Account.Achievements
 		{
 			data = new List<Achievement>();
 			Init("account/achievements", data, apiKey);
+			Download();
 		}
 	}
 

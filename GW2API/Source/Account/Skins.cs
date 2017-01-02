@@ -11,6 +11,7 @@ namespace GW2API.Account.Skins
 		{
 			data = new List<int>();
 			Init("account/skins", data, apiKey);
+			Download();
 		}
 	}
 }

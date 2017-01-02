@@ -12,6 +12,7 @@ namespace GW2API.Account.Inventory
 		{
 			data = new List<ItemSlot>();
 			Init("account/inventory", data, apiKey);
+			Download();
 		}
 	}
 }

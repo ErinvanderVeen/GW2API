@@ -12,6 +12,7 @@ namespace GW2API.Account.Materials
 		{
 			data = new List<CraftingMaterial>();
 			Init("account/materials", data, apiKey);
+			Download();
 		}
 	}
 }

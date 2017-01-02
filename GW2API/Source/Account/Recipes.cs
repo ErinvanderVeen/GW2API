@@ -11,6 +11,7 @@ namespace GW2API.Account.Recipes
 		{
 			data = new List<int>();
 			Init("account/recipes", data, apiKey);
+			Download();
 		}
 	}
 }

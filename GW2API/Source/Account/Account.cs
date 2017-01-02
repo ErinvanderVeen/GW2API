@@ -10,6 +10,7 @@ namespace GW2API.Account
 		{
 			data = new Data();
 			Init("account", data, apiKey);
+			Download();
 		}
 	}
 

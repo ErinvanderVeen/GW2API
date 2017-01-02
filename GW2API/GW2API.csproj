@@ -38,7 +38,6 @@
     <Compile Include="Source\Account\Account.cs" />
     <Compile Include="Source\Account\Achievements.cs" />
     <Compile Include="Source\Account\Bank.cs" />
-    <Compile Include="Source\Core\Item.cs" />
     <Compile Include="Source\Account\Dyes.cs" />
     <Compile Include="Source\Account\Finishers.cs" />
     <Compile Include="Source\Account\Inventory.cs" />
@@ -52,6 +51,12 @@
     <Compile Include="Source\Account\Skins.cs" />
     <Compile Include="Source\Account\Titles.cs" />
     <Compile Include="Source\Account\Wallet.cs" />
+    <Compile Include="Source\Achievements\Achievements.cs" />
+    <Compile Include="Source\Core\ItemSlot.cs" />
+    <Compile Include="Source\Core\DailyAchievements.cs" />
+    <Compile Include="Source\Achievements\Daily\Daily.cs" />
+    <Compile Include="Source\Achievements\Daily\Tomorrow.cs" />
+    <Compile Include="Source\Achievements\Group.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -61,5 +66,7 @@
     <Folder Include="Source\" />
     <Folder Include="Source\Account\" />
     <Folder Include="Source\Core\" />
+    <Folder Include="Source\Achievements\" />
+    <Folder Include="Source\Achievements\Daily\" />
   </ItemGroup>
 </Project>

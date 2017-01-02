@@ -11,6 +11,7 @@ namespace GW2API.Account.Dyes
 		{
 			data = new List<int>();
 			Init("account/dyes", data, apiKey);
+			Download();
 		}
 	}
 }

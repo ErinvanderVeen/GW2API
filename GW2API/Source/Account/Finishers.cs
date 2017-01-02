@@ -11,12 +11,12 @@ namespace GW2API.Account.Finishers
 		{
 			data = new List<Finisher>();
 			Init("account/finishers", data, apiKey);
+			Download();
 		}
 	}
 		
 	public class Finisher
 	{
-		internal Finisher() {}
 		public int id { get; set; }
 		public bool permanent { get; set; }
 		public int? quantity { get; set; }

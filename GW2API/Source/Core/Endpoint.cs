@@ -17,7 +17,6 @@ namespace GW2API.Core
 			this.apiKey = apiKey;
 			this.endpoint = endpoint;
 			this.target = target;
-			Download();
 		}
 
 		public void Download(List<Tuple<string, string>> parameters = null)

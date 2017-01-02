@@ -11,6 +11,7 @@ namespace GW2API.Account.Outfits
 		{
 			data = new List<int>();
 			Init("account/outfits", data, apiKey);
+			Download();
 		}
 	}
 }

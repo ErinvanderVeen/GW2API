@@ -11,12 +11,12 @@ namespace GW2API.Account.Wallet
 		{
 			data = new List<Currency>();
 			Init("account/wallet", data, apiKey);
+			Download();
 		}
 	}
 		
 	public class Currency
 	{
-		internal Currency() {}
 		public int id { get; set; }
 		public int value { get; set; }
 	}

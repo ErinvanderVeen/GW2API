@@ -12,6 +12,7 @@ namespace GW2API.Account.Bank
 		{
 			data = new List<ItemSlot>();
 			Init("account/bank", data, apiKey);
+			Download();
 		}
 	}
 }

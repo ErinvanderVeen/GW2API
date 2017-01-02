@@ -11,12 +11,12 @@ namespace GW2API.Account.Masteries
 		{
 			data = new List<Mastery>();
 			Init("account/masteries", data, apiKey);
+			Download();
 		}
 	}
 		
 	public class Mastery
 	{
-		internal Mastery() {}
 		public int id { get; set; }
 		public int level { get; set; }
 	}

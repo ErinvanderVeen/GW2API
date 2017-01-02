@@ -11,6 +11,7 @@ namespace GW2API.Account.Minis
 		{
 			data = new List<int>();
 			Init("account/minis", data, apiKey);
+			Download();
 		}
 	}
 }

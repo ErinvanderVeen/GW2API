@@ -11,6 +11,7 @@ namespace GW2API.Account.Titles
 		{
 			data = new List<int>();
 			Init("account/titles", data, apiKey);
+			Download();
 		}
 	}
 }
