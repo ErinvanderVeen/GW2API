@@ -39,12 +39,12 @@ namespace GW2Example
 | /v2/account/skins               | Yes         |
 | /v2/account/titles              | Yes         |
 | /v2/account/wallet              | Yes         |
-| /v2/achievements                | Partially (only when given ids)  |
+| /v2/achievements                | Partially (only when given ids) |
 | /v2/achievements/categories     | No          |
 | /v2/achievements/daily          | Yes         |
 | /v2/achievements/daily/tomorrow | Yes         |
 | /v2/achievements/groups         | Yes         |
-| /v2/backstory/answers           | No          |
+| /v2/backstory/answers           | Partially (only returns string list of answers) |
 | /v2/backstory/questions         | No          |
 | /v2/build                       | No          |
 | /v2/characters                  | No          |

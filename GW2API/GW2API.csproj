@@ -57,6 +57,7 @@
     <Compile Include="Source\Achievements\Daily\Daily.cs" />
     <Compile Include="Source\Achievements\Daily\Tomorrow.cs" />
     <Compile Include="Source\Achievements\Group.cs" />
+    <Compile Include="Source\Backstory\Answers.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -68,5 +69,6 @@
     <Folder Include="Source\Core\" />
     <Folder Include="Source\Achievements\" />
     <Folder Include="Source\Achievements\Daily\" />
+    <Folder Include="Source\Backstory\" />
   </ItemGroup>
 </Project>
